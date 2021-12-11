@@ -41,6 +41,10 @@ export function getDisplayName(item, options = {}) {
             name = name ? (number + nameSeparator + name) : number;
         }
     }
+    if (item.Type === 'Audio' && 'DisplayArtist' === 'DisplayArtist' && item.Artists.length > 0 ) {
+        let artists = item.Artists.join(", ")
+        return `${name} - ${artists}`;
+    }
 
     return name;
 }
