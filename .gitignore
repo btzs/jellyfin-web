@@ -12,3 +12,4 @@ config.json
 
 # log
 yarn-error.log
+jellyfin-web_10.8.0/*
